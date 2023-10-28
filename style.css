@@ -9,10 +9,10 @@ color:  #6c8cbb;
 }
 
 .dark-mode {
-    background-color: black;
+    background-color: #2b2b2b;
     color: whitesmoke;
-   
-}
+   }
+
 
 
 #home{
@@ -28,6 +28,10 @@ color:  #6c8cbb;
 
 h1, h2 {
     text-align: center;
+}
+
+h1 {
+    margin-top: 50px;
 }
 
 
@@ -55,14 +59,20 @@ hr {
     background-color: #6c8cbb52;
     border: 2px solid rgba(114, 28, 226, 0.575);
     width: 50%;
+    transition: width 0.7s ease;
 }
 
 
 .topmenu{
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 color: whitesmoke;
+background: #6c8cbb;
 margin: 10px;
-padding-top: 20px;
+padding-top: 14px;
+padding-bottom: 6px;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 8px;
 font-size: 20px;
 text-decoration: none;
 }
@@ -70,6 +80,8 @@ text-decoration: none;
 .topmenu:hover {
     
     color: aliceblue;
+    background: #20096d;
+    transition: background-color 2s ease; 
     font-weight: bolder;
     text-decoration: wavy;
 }
@@ -78,7 +90,7 @@ text-decoration: none;
     color: whitesmoke;
 float: right;
 padding-right: 80px;
-margin-top: 60px;
+margin-top: 50px;
 
 }
 
@@ -137,48 +149,48 @@ input {
     font-size: 25px;
     float: left;
     padding-left: 2cm;
-    padding-top: 56px;
-    text-decoration: none;
+    padding-top: 50px;
+   
 }
 
-.profile_name:hover {
-    text-decoration: double;
-}
+
 
 
 .mail, .contact_info img{
-    width: 40px;
-    height: 40px;
     display: inline-flex;
     justify-items: center;
     align-items: center;
     margin-right: 1px;
-    margin-left: -20px;
+    margin-left: 0px;
+    padding-right: 5px;
 margin-bottom: 5px;
 }
 
 
 .mail {
     color: #6c8cbb;
-    text-decoration: none;
+    text-decoration: none; 
+    font-size: medium;
 }
 .mail:hover {
     color: #6c8cbb;
-    font-weight: bolder;
-    text-decoration-style: double;
+    font-size:large;
+    text-decoration-style: wavy;
+    opacity: 0.5;
 
 }
 
- .icon small {
-    display:inline-flex;
-    justify-items: center;
-    margin-right: 10px;
-    margin-left: 5px;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-top: 15px;
-    padding-right: 5px;
-}
+  #git, #linkedin small {
+    display:flex;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 8px;
+    padding-left: 6px;
+    margin-top: 8px;
+   
+ }
+
 
 
 #totop {
@@ -187,10 +199,10 @@ bottom: 25px;
 left: 24px;
 border-radius: 100%;
 border: solid 4px #6c8cbb ;
-padding: 2px 2px 2px 2px;
+padding: 4px 5px 4px 5px;
 }
 
-#icon:hover, #totop:hover {
+#icon:hover, #totop:hover, #git:hover, #linkedin:hover {
     opacity: 0.5;
 
 }
@@ -242,10 +254,12 @@ flex-wrap: wrap;
 .image-wrapper:hover .image {
     transform: scale(1.1);
     box-shadow: 5px 1px 10px 2px #6c8cbb;
+    transition: ease 1s;
 }
 
 .image-wrapper:hover .dialogue-box {
     opacity: 1;
+    transition: ease-in 1s;
 
 }
 .image-wrappersk {
@@ -258,15 +272,18 @@ flex-wrap: wrap;
 .image-wrappersk:hover .image {
     transform: scale(1.1);
     box-shadow: 5px 1px 10px 2px #6c8cbb;
+    transition: ease 1s;
 }
 
 
 .image-wrappersk:hover .dialogue-box-skill {
     opacity: 1;
+    transition: ease-in 1s;
+
 }
 
 .dialogue-box-skill {
-    transform: translate(20px, 10px);
+    transform: translate(20px, 6px);
 max-width: 350px;
     display: flex;
     flex-wrap: wrap;
