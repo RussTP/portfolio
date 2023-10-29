@@ -174,7 +174,7 @@ margin-bottom: 90px;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 8px;
+    margin-top: 10px;
     margin-right: 90px;
  
  }
@@ -196,6 +196,7 @@ margin-bottom: auto;
     justify-content: center;
     flex-wrap: wrap;
  margin-top: 0px;
+ margin-bottom: 1px;
  }
 
 
@@ -317,7 +318,7 @@ hr {
   position: fixed;
     left: 0;
     bottom: 0px;
-    height: 80px;
+    height: 90px;
     width: 100%;
     background-color: #6c8cbb;
     color: whitesmoke;
