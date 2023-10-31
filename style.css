@@ -1,15 +1,18 @@
-html {
-    position: relative;
+html, body {
     min-height: 100%;
+    min-width: 100%;
 }
+
+
 body {
 background: whitesmoke;
 transition: background-color 2s ease;
 color:  #6c8cbb;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    margin-bottom: 8%;
-  
+    margin: 0;
+    padding: 0;
+
 
 }
 
@@ -44,7 +47,7 @@ h1 {
 
 
 
-#hr2 {
+.hr2 {
     height: 15px;
     background-color: #6c8cbb;
     border: 2px solid rgba(106, 17, 207, 0.644);
@@ -54,7 +57,7 @@ h1 {
     margin-right: auto;
 }
 
-#hr2:hover {
+.hr2:hover {
     height: 18px;
     background-color: #6c8cbb52;
     border: 2px solid rgba(114, 28, 226, 0.575);
@@ -136,7 +139,7 @@ input:checked + .button {
 }
 
 input:checked + .button::before{
-    transform: translateX(-29px);
+    transform: translateX(-30px);
 }
 
 input {
@@ -205,8 +208,8 @@ margin-bottom: auto;
 
 #totop {
 position: fixed;
-bottom: 12px;
-left: 50px;
+bottom: 19px;
+left: 70px;
 padding-left: 20px;
 border-radius: 100%;
 border: solid 2px #f5f5f5 ;
