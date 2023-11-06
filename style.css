@@ -255,13 +255,14 @@ padding: 4px 5px 4px 5px;
 
 .dialogue-box {
     transform: translate(5%, -5%);
-   max-width: 200px;
-   min-width:auto;
-   min-height: auto;
+    max-width: 200px;
+    min-width: 5%;
+    max-height: 100px;
 padding: 20px; 
-display: inline-flex;
+display: flex;
+overflow: auto;
 flex-wrap: wrap;
-justify-content: flex-start;
+
     background-color: #6c8cbb96;
     color: whitesmoke;
     border-radius: 10px;
@@ -281,6 +282,7 @@ justify-content: flex-start;
     transition: ease-in 1s;
     margin-top: 20px;
     margin-right: 100px;
+
 
 }
 .image-wrappersk {
@@ -313,7 +315,9 @@ justify-content: flex-start;
     transform: translate(5%, 5%);
 max-width: 200px;
 min-width: 5%;
+max-height: 100px;
     display: inline-flex;
+    overflow: auto;
 flex-wrap: wrap;
 justify-content: flex-start;
    padding: 25px;
