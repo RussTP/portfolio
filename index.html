@@ -1,123 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" type="text/css" href="csscontact.css">
-</head>
-<body>
-    <div class="container">
-    <input type="checkbox" id="check">
-    <label for="check" class="button" onclick="toggleDarkMode()"></label>
-</div>
-    <script src="script.js"></script>
-    <nav>
-        <div id="home">
-            <div class="profile_name">
-            Russell Pawlett
-        </div>
-        <!--NAV MENU-->
-<div class="topdiv">
-    <a class="topmenu" href="#About">About</a>
-   <a class="topmenu" href="#Projects">Projects</a>
-    <a class="topmenu" href="#Skills">Skills</a>
-    <a class="topmenu" href="#Contact">Contact</a>
-</div>
-</div>
-
-<!--TITLE-->
-    </nav>
-    <div id="title">
-    <h1>Web Developer</h1>
-<hr class="hr2">
-</div>
-
-<!--MAIN PAGE BODY ABOUT PROJECTS ETC-->
-<section id="About">
-<div class="about">
+ <head>
+  <title>portfolio</title>
+  <link rel="stylesheet"
+   href="style.css">
+  <link rel="stylesheet" type="text/css"
+   href="csscontact.css">
+ </head>
+ <body>
+  <div class="container">
+   <input type="checkbox" id="check">
+   <label for="check" class="button"
+    onclick="toggleDarkMode()"></label>
+  </div>
+  <script src="script.js"></script>
+  <nav>
+   <div id="home">
+    <div class="profile_name">
+     Russell Pawlett
+    </div>
+    <!--NAV MENU-->
+    <div class="topdiv">
+     <a class="topmenu"
+      href="#About">About</a>
+     <a class="topmenu"
+      href="#Projects">Projects</a>
+     <a class="topmenu"
+      href="#Skills">Skills</a>
+     <a class="topmenu"
+      href="#Contact">Contact</a>
+    </div>
+   </div>
+   <!--TITLE-->
+  </nav>
+  <div id="title">
+   <h1>Web Developer</h1>
+   <hr class="hr2">
+  </div>
+  <!--MAIN PAGE BODY ABOUT PROJECTS ETC-->
+  <section id="About">
+   <div class="about">
     <h2>About</h2>
     <p>Designer, Web Developer, Coder</p>
-    <p>Inspired to create sophisticated, and engaging websites</p>
+    <p>Inspired to create sophisticated,
+     and engaging websites</p>
     <p>Located in Ontario, Canada</p>
-
     <hr class="hr2">
+   </div>
+  </section>
+  <section id="Projects">
+   <h2>Projects</h2>
+   <h3>Completed Projects</h3>
+   <div class="image-container">
+    <div class="image-wrapper">
+     <a
+      href="https://russtp.github.io/portfolio/conversion/">
+      <img
+       src="Portfolioimages/convimg.png"
+       width="80px" height="80px"
+       class="image"
+       alt="Unit Conversion image"></a>
+     <div class="dialogue-box"> Unit
+      Conversions project I completed
+      through an IBM course using HTML,
+      CSS and JavaScript. Temperature
+      Celsius to Fahrenheit, Kilograms to
+      Pounds, and Kilometers to
+      Miles per Hour conversions.
+     </div>
     </div>
-</section>
-    <section id="Projects">
-<h2>Projects</h2>
-<h3>Completed Projects</h3>
-        <div class="image-container">
-            <div class="image-wrapper">
-                <a href="https://russtp.github.io/portfolio/conversion/">
-<img src="Portfolioimages/convimg.png" width="80px" height="80px" class="image" alt="Unit Conversion image"></a>
-<div class="dialogue-box"> Unit Conversions project I completed through an IBM course using HTML,
- CSS and JavaScript. Temperature Celsius to Fahrenheit, Kilograms to Pounds, and Kilometers to
-Miles per Hour conversions.
-</div>
-</div>
-</div>
-<hr class="hr2">
-</section>
-<section id="Skills">
-<h2 id="skills">Skills</h2>
-<h3>Front-end Development Skills</h3>
-<div class="html-container">
+   </div>
+   <hr class="hr2">
+  </section>
+  <section id="Skills">
+   <h2 id="skills">Skills</h2>
+   <h3>Front-end Development Skills</h3>
+   <div class="html-container">
     <div class="image-container">
+     <div class="image-wrappersk">
+      <img
+       src="Portfolioimages/html5.png"
+       class="image"
+       alt="html5 icon image">
+      <div class="dialogue-box-skill">
+       HTML - HyperText Markup Language
+       is used to create the layout of
+       your website
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="image-container">
     <div class="image-wrappersk">
-<img src="Portfolioimages/html5.png" class="image" alt="html5 icon image">
-<div class="dialogue-box-skill"> HTML - HyperText Markup Language is used to create the layout of your website
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-    <div class="image-container">
-        <div class="image-wrappersk">
-<img src="Portfolioimages/css3.png" class="image" alt="CSS3 icon image">
-<div class="dialogue-box-skill">CSS3 - Cascading Style Sheets is used to style and assist HTML5 in laying out your website
-</div>
-</div>
-</div>
-
-    <div class="image-container">
-        <div class="image-wrappersk">
-<img src="Portfolioimages/js.png" class="image" alt="JavaScript icon image">
-<div class="dialogue-box-skill">JS - JavaScript is used to make your webpage interactive
-</div>
-</div>
-</div>
-<hr class="hr2">
-</section>
-<section id="Contact">
-<div class="contact-title">
-    <h2>Contact</h2>
+     <img
+      src="Portfolioimages/css3.png"
+      class="image"
+      alt="CSS3 icon image">
+     <div class="dialogue-box-skill">CSS3
+      - Cascading Style Sheets is used to
+      style and assist HTML5 in laying
+      out your website
+     </div>
     </div>
-    <div class="contact-form">
-        <form action="https://formspree.io/f/mnqkwewe" method="POST">
-            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-            <br>
-            <input name="email" type="email" class="form-control" placeholder="Your Email" required>
-            <br>
- <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea><br>
-            <button type="submit">Submit</button>
-        </form>
-        </div>
-        </section>
-
-</body>
+   </div>
+   <div class="image-container">
+    <div class="image-wrappersk">
+     <img
+      src="Portfolioimages/js.png"
+      class="image"
+      alt="JavaScript icon image">
+     <div class="dialogue-box-skill">JS -
+      JavaScript is used to make your
+      webpage interactive
+     </div>
+    </div>
+   </div>
+   <hr class="hr2">
+  </section>
+  <section id="Contact">
+   <div class="contact-title">
+    <h2>Contact</h2>
+   </div>
+   <div class="contact-form">
+    <form
+     action="https://formspree.io/f/mnqkwewe"
+     method="POST">
+     <input name="name" type="text"
+      class="form-control"
+      placeholder="Your Name" required>
+     <br>
+     <input name="email" type="email"
+      class="form-control"
+      placeholder="Your Email" required>
+     <br>
+     <textarea name="message"
+      class="form-control"
+      placeholder="Message" row="4"
+      required></textarea><br>
+     <button
+      type="submit">Submit</button>
+    </form>
+   </div>
+  </section>
+ </body>
 </html>
 <!--FOOTER OF PAGE CONTACT, COPYRIGHT-->
-<footer class="footer" >
-    <div class="icon">
-        <p id="touch">Get in touch</p>
-    <a id="totop" href="#home"><img src="Portfolioimages/home.svg" width="20px" height="20px" alt="home icon"></a>
-    <a id="git" href="https://github.com/RussTP"><img src="Portfolioimages/github.svg" width="30px" height="30px" alt="github icon"></a>
-    <a id="linkedin" href="https://www.linkedin.com/in/rpawlett/"><img src="Portfolioimages/linkedin.svg" width="30px" height="30px" alt="linkedin icon"></a>
-    <a id="mail" href="mailto:rpawlett@live.com"><img id="icon" src="Portfolioimages/email.svg" width="30px" height="30px" alt="email icon"></a>
-    </div>
-    <hr>
-    <small id="copyright">&copy;2023 Russell Pawlett</small>
-    </footer>
+<footer class="footer">
+ <div class="icon">
+  <p id="touch">Get in touch</p>
+  <a id="totop" href="#home"><img
+    src="Portfolioimages/home.svg"
+    width="20px" height="20px"
+    alt="home icon"></a>
+  <a id="git"
+   href="https://github.com/RussTP"><img
+    src="Portfolioimages/github.svg"
+    width="30px" height="30px"
+    alt="github icon"></a>
+  <a id="linkedin"
+   href="https://www.linkedin.com/in/rpawlett/"><img
+    src="Portfolioimages/linkedin.svg"
+    width="30px" height="30px"
+    alt="linkedin icon"></a>
+  <a id="mail"
+   href="mailto:rpawlett@live.com"><img
+    id="icon"
+    src="Portfolioimages/email.svg"
+    width="30px" height="30px"
+    alt="email icon"></a>
+ </div>
+ <hr>
+ <small id="copyright">&copy;2023 Russell
+  Pawlett</small>
+</footer>
+

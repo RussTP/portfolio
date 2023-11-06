@@ -20,9 +20,9 @@
     form .form-control {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 43%;
+        margin-left: 30%;
         padding: 4px;
-        width: 15%;
+        width: 40%;
         background: #6c8cbb;
         outline: whitesmoke;
         border: none;
