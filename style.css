@@ -279,7 +279,7 @@ justify-content: flex-start;
 .image-wrapper:hover .dialogue-box {
     opacity: 1;
     transition: ease-in 1s;
-    margin-top: 10%;
+    margin-top: 20px;
     margin-right: 100px;
 
 }
@@ -288,6 +288,7 @@ justify-content: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 4%;
   
 }
 
