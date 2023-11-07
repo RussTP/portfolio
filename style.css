@@ -27,12 +27,12 @@ color:  #6c8cbb;
 #home{
     background-color: #6c8cbb;
     color: whitesmoke;
-   margin-left: auto;
-   margin-right: auto;
+   margin-left: 0;
+   margin-right: 0;
    margin-top: -2cm;
    padding-top: 2.1cm;
    padding-bottom: 2cm;
-   height: 5mm;
+   height: 1mm;
 }
 
 h1, h2 {
@@ -70,12 +70,7 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 color: whitesmoke;
 background: #6c8cbb52;
 display: flex;
-justify-content: flex-end;
-align-content: flex-start;
 flex-shrink: 2;
-margin-bottom: 2%;
-margin-right: -4%;
-margin-left: -4%;
 padding-top: 14px;
 padding-bottom: 4px;
 padding-left: 20px;
@@ -91,23 +86,26 @@ text-decoration: none;
     color: aliceblue;
     background: #20096d;
     transition: background-color 1.5s ease;
-    transform: translate(-2%, -20%);
+    transform: translate(-2%, -5%);
     font-weight: bolder;
 }
 
 .topdiv { 
     color: whitesmoke;
-margin-top: 47px;
+margin-top: 30px;
+margin-left: 8%;
+margin-right: 8%;
 padding:1px 2px 1px 2px;
 display: flex;
-flex-shrink: 1;
+flex-wrap: nowrap;
+flex-shrink: 2;
 justify-content: space-evenly;
 align-items: flex-end;
 
 
 }
 
-.container {
+#container {
     background-color: #6c8cbb;
     display: flex;
     align-items:center;
