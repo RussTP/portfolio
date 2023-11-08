@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-  <title>portfolio</title>
-  <link rel="stylesheet"
-   href="style.css">
-  <link rel="stylesheet" type="text/css"
-   href="csscontact.css">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="csscontact.css">
+   <title>portfolio</title>
  </head>
  <body>
-  <div id="container">
-   <input type="checkbox" id="check">
-   <label for="check" class="button"
-    onclick="toggleDarkMode()"></label>
-  </div>
-  <script src="script.js"></script>
-  <nav>
-    <!--NAV MENU-->
-    <div id="home">
-    <div class="topdiv">
-     <a class="topmenu"
-      href="#About">About</a>
-     <a class="topmenu"
-      href="#Projects">Projects</a>
-     <a class="topmenu"
-      href="#Skills">Skills</a>
-     <a class="topmenu"
-      href="#Contact">Contact</a>
-    </div>
-   </div>
-   <!--TITLE-->
-  </nav>
+  <header class="header">
+                <!--Day/Night-->
+                <div id="container">
+                  <input type="checkbox" id="check">
+                  <label for="check" class="button"
+                   onclick="toggleDarkMode()"></label>
+                 </div>
+                 <script src="script.js"></script>
+    <!--logo-->
+    <a href="#" class="logo">RP</a>
+    <!--hamburger icon-->
+    <input class="side-menu" type="checkbox" id="side-menu">
+    <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+       <!--Nav Menu-->
+      <nav class="nav">
+       <ul class="menu">
+        <li><a href="#About">About</a></li>
+       <li><a href="#Projects">Projects</a></li>
+       <li><a href="#Skills">Skills</a></li>
+       <li><a href="#Contact">Contact</a></li>
+       </ul>
+      </nav>
+  </header>
+
+<!--Title-->
+<main>
   <div id="title">
    <h1>Web Developer</h1>
    <h2>Russell Pawlett </h2>
    <hr class="hr2">
   </div>
+
   <!--MAIN PAGE BODY ABOUT PROJECTS ETC-->
+
   <section id="About">
    <div class="about">
     <h2>About</h2>
@@ -141,16 +148,13 @@
     </form>
    </div>
   </section>
+  </main>
  </body>
 </html>
 <!--FOOTER OF PAGE CONTACT, COPYRIGHT-->
 <footer class="footer">
  <div class="icon">
   <p id="touch">Get in touch</p>
-  <a id="totop" href="#home"><img
-    src="Portfolioimages/home.svg"
-    width="20px" height="20px"
-    alt="home icon"></a>
   <a id="git"
    href="https://github.com/RussTP"><img
     src="Portfolioimages/github.svg"
@@ -168,7 +172,7 @@
     width="30px" height="30px"
     alt="email icon"></a>
  </div>
- <hr>
+ <hr class="hr1">
  <small id="copyright">&copy;2023 Russell
   Pawlett</small>
 </footer>
