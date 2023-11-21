@@ -1,5 +1,1 @@
-function toggleDarkMode () {
-    const body = document.body;
-    body.classList.toggle("dark-mode");
-}
-
+const swup = new Swup();

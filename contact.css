@@ -1,0 +1,409 @@
+/* ThemeNav */
+
+:root{
+    --white: white;
+    --blue: #6c8cbb;
+    --gray: rgba(189, 189, 189, 0.808);
+} /* variables*/
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--white);
+    color: #6c8cbb;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: ease-out 1s;
+    position: relative;
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* Header */
+.header{
+    background-color: var(--blue);
+    box-shadow: 1px 1px 5px 0px var(--blue);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+/* Logo */
+.logo{
+    display: inline-block;
+    color: var(--white);
+    font-size: 60px;
+    margin-left: 100px;
+    text-decoration: wavy;
+}
+
+.logo:hover {
+    color: var(--gray);
+}
+
+/* Nav menu */
+.nav{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--blue);
+    overflow: hidden;
+
+}
+.menu a{
+    display: block;
+    padding: 30px;
+    color: var(--white);
+}
+.menu a:hover{
+    background-color: var(--blue);
+    color: var(--gray);
+    
+}
+.nav{
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Menu Icon */
+.hamb{
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}/* Style label tag */
+
+.hamb-line {
+    background: var(--white);
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+
+} /* Style span tag */
+
+.hamb-line::before,
+.hamb-line::after{
+    background: var(--white);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+
+.side-menu {
+    display: none;
+    
+} /* Hide checkbox */
+
+
+/* Toggle menu icon */
+.side-menu:checked ~ nav{
+    max-height: 100%;
+    opacity: 1;   
+
+    
+}
+
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+  
+
+
+}
+
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:10px;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:10px;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+     background-color: transparent;
+    
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+        text-decoration: overline;
+   
+       
+
+    }
+
+    .hamb{
+        display: none;
+    }
+}
+
+/* Sub nav */
+.subnav-content {
+    background-color:  var(--white);
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0 ;
+    display: none;
+
+  }
+.subnav-content a {
+    color: var(--blue);
+    text-decoration: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+   
+}
+.subnav:hover .subnav-content {
+    display: block;
+    
+}
+
+/* title*/
+
+
+.title  {
+    display: flex;
+ justify-content: flex-start;
+ flex-direction: column;
+text-align: left;
+ margin-top: 20px;
+ margin-left: 50px;
+flex-wrap: wrap;
+ gap: 20px;
+ flex-wrap:wrap ;
+}
+
+.portname {
+    display: flex;
+justify-content: flex-end;
+align-content: flex-end;
+margin-top: -108px;
+margin-right: 20px;
+flex-wrap: wrap;
+
+}
+
+
+
+/* Night/Day Mode*/
+.dark-mode  {
+    background-color: #2b2b2b;
+    color: whitesmoke;
+    border-color:whitesmoke;
+    transition: ease-out 1s;
+   }
+
+    #container {
+        background-color: whitesmoke;
+        opacity: 0.4;
+        display: flex;
+        position: fixed;
+        margin-left: 5px;
+        margin-top: 12px;
+        flex-wrap: nowrap;
+        border: solid 2px;
+        border-radius: 20px;
+    }
+
+
+
+.button {
+    background-color: #d2d2d2;
+    color: whitesmoke;
+    width: 60px;
+    height: 30px;
+    border-radius: 200px;
+    border: solid 2px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+.button::before{
+    position: absolute;
+    content: '';
+    background-color: whitesmoke;
+width: 23px;
+height: 23px;
+border-radius: 200px;
+margin:1px;
+transition: 0.6s;
+
+    }
+
+
+input:checked + .button {
+    background-color: #20096d;
+
+}
+
+input:checked + .button::before{
+    transform: translateX(30px);
+}
+
+input {
+    display: none;
+}
+
+
+
+
+
+    .contact-title{
+        margin-top: 60px;
+        text-align: center;
+      
+    }
+    
+    #contact-title h1 {
+       line-height: 10px;
+    }
+    
+    form {
+        margin-top: 20px;
+      
+    
+    }
+
+  
+    form .form-control {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 26%;
+        padding: 4px;
+        width: 50%;
+        background: #6c8cbb;
+        outline: whitesmoke;
+        border: none;
+        border-radius: 2px;
+        border-top: #6c8cbb;
+        border-bottom: 4px solid #6c8cbb;
+        opacity: 1;
+        color: whitesmoke;
+        font-size: 12px;
+        margin-top: 1px;
+        
+    }
+
+    form .form-control:hover {
+        opacity: 0.5;
+        box-shadow: 2px 10px 20px 2px rgba(6, 10, 218, 0.719);
+    }
+
+    ::placeholder {
+        color: whitesmoke;
+        opacity: 0.5;
+    }
+
+    input {
+        height: 20px;
+        color: whitesmoke;
+    }
+    
+    
+     form button  {
+        background: #6c8cbb;
+        color: whitesmoke;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        height: 25px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 40%;
+        padding: 4px;
+        width: 20%;
+        margin-top: 1px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 2px;
+        opacity: 1;
+    }
+    
+     form button:hover {
+        cursor: pointer;
+        opacity: 0.5;
+        box-shadow: 2px 10px 20px 2px rgba(6, 10, 218, 0.719);
+      
+    }
+
+    /* Footer Icons and Copyright*/
+
+
+
+.contacticon, #touch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+small {
+    display: block;
+    margin-left: 4%;
+}
+
+
+
+
+
+    
+
+
+#icon:hover, #totop:hover, #git:hover, #linkedin:hover {
+    opacity: 0.5;
+
+}
+
+footer {
+    position: absolute;
+    display: block;
+    padding-top: 65px;
+      left: 0;
+      right: 0;
+      height: 130px;
+    bottom: 0;
+      width: 100%;
+      background-color: #6c8cbbfb;
+      color: whitesmoke;
+      z-index: 1;
+ 
+  }
+  
+
