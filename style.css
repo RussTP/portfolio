@@ -222,14 +222,14 @@ flex-wrap: wrap;
 }
 
 
-#box {
+
+#box  {
     display: flex;
     justify-content: center;
     position: relative;
     align-content: center;
-    top: 200px;
+    top: 250px;
     margin-left: 40%;
-    flex-shrink: 2;
     border: solid 2px #6c8cbb;
     background: rgb(125,10,203);
     background: radial-gradient(circle, rgba(125,10,203,1) 0%, rgba(26,34,228,1) 50%, rgba(108,140,187,1) 100%);
@@ -248,19 +248,19 @@ flex-wrap: wrap;
 
 @-webkit-keyframes mover {
     0% { -webkit-transform: translateX(0); }
-    100% { -webkit-transform: translateX(110%); }
+    100% { -webkit-transform: translateX(300px); }
 } 
 @-moz-keyframes mover {
     0% { -moz-transform: translateX(0); }
-    100% { -moz-transform: translateX(110%); }
+    100% { -moz-transform: translateX(300px); }
 } 
 @-o-keyframes mover {
     0% { -o-transform: translateX(0); }
-    100% { -o-transform: translateX(110%); }
+    100% { -o-transform: translateX(300px); }
 } 
 @keyframes mover {
     0% { transform: translateX(0); }
-    100% { transform: translateX(110%); }
+    100% { transform: translateX(300px); }
 }
 
 .box-mover{
@@ -555,9 +555,11 @@ input {
 
 .home-nav  a {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-size: 18px;
     color: #6c8cbb;
+    padding: 10px 5px 5px 5px;
     
 }
 
@@ -571,7 +573,7 @@ input {
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 4s;
+	animation-duration: 3.5s;
 }
 @keyframes fadeInOpacity {
 	0% {
