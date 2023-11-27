@@ -14,11 +14,18 @@
    {
   linkToSelf: 'navigate'
 }</script>
+<script>
+document.querySelectorAll('.menu').forEach(link=>{
+  link.addEventListener('click', () => {
+    alert();
+  })
+})
+</script>
  </head>
  <body>
   <header class="header">
     <!--logo-->
-  <a href="/portfolio/" class="logo">RP</a>
+    <a href="/portfolio/" class="logo">RP</a>
     <!--hamburger icon-->
     <input class="side-menu" type="checkbox" id="side-menu">
     <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
